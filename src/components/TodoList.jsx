@@ -1,13 +1,22 @@
-import { useState } from "react";
-
+import { useState, useEffect } from "react";
 import ListHeader from "./ListHeader";
 import ListItem from "./ListItem";
-
 import SortBar from "./SortBar";
 import List from "./List";
+
+const localKey = "todos";
+
 function TodoList() {
   //Todolist state
-  const [todoList, setTodoList] = useState([]);
+  //Initial state is set to return the localstorage or empty if there is none\\
+  const [todoList, setTodoList] = useState(() => {
+    return JSON.parse(localStorage.getItem(localKey)) || [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem(localKey, JSON.stringify(todoList));
+  }, [todoList]);
+
   //Input value state
   const [input, setInput] = useState("");
 
