@@ -1,0 +1,68 @@
+ {todos.map((todo, index) => (
+          <li className="list-item">{todo.todo}</li>
+        ))}
+ 
+ 
+ /* {todos.map((todo) => (
+          <ListItem key={todo.id}>
+            {todo.name}
+            <div className="btns">
+              <MdEdit className="edit"></MdEdit>
+              <MdRemoveCircle
+                className="remove"
+                onClick={() => removeTodo(todo.id)}
+              ></MdRemoveCircle>
+            </div>
+          </ListItem>
+        ))} */
+ 
+ 
+ {/* <header>
+        <div className="header-wrap">
+          <h1 className="headline">I NEED TODO:</h1>
+          <div className="add-wrap">
+            <input
+              className="input"
+              type="text"
+              value={input}
+              onChange={(event) => setInput(event.target.value)}
+            ></input>
+            <button className="add-btn" onClick={() => addTodo(input)}>
+              <IoMdAddCircle />
+            </button>
+          </div>
+        </div>
+      </header>
+      <nav>
+        <div className="sort-wrap">
+          <h4 className="sort-headline">Sortby</h4>
+          <div className="sorts">
+            <h4 className="name">Name</h4>
+            <h4 className="date">Date</h4>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <ul className="list">
+          {todos.map((todo, index) => {
+            return (
+              <>
+                <li className="list-item" key={todo.id}>
+                  {todo.text}
+                  <span className="btns">
+                    <button className="edit">
+                      <MdEdit></MdEdit>
+                    </button>
+                    <button
+                      className="remove"
+                      onClick={() => console.log("clicked")}
+                    >
+                      <ImCross></ImCross>
+                    </button>
+                  </span>
+                </li>
+              </>
+            );
+          })}
+        </ul>
+      </main> */}

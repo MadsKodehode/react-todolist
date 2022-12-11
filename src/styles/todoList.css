@@ -1,0 +1,144 @@
+.todo-list {
+  width: 700px;
+  height: 700px;
+  margin: 0.5rem auto;
+  border-radius: 20px;
+  background: var(--todo-bg);
+  overflow: hidden;
+}
+
+header {
+  background: var(--header-bg);
+  height: 120px;
+  display: flex;
+}
+
+.header-wrap {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+}
+
+.headline {
+  color: #fff;
+  font-size: 40px;
+}
+
+.input {
+  outline: none;
+  border: none;
+  font-size: 20px;
+  height: 35px;
+  width: 200px;
+  background: var(--todo-bg);
+  vertical-align: middle;
+}
+
+.add-wrap {
+  display: flex;
+}
+.add-btn {
+  width: 65px;
+  height: 35px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #fff;
+  background: var(--todo-light);
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-btn:hover {
+  color: var(--todo-dark);
+}
+nav {
+  background: var(--todo-dark);
+  color: #fff;
+}
+.sort-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+.sort-headline {
+  padding: 1rem;
+}
+.sorts {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  padding: 1rem;
+}
+main {
+  height: auto;
+  overflow-y: auto;
+}
+
+.list {
+  width: 80%;
+  height: 400px;
+  margin: 50px auto;
+  list-style: none;
+}
+
+.list-item {
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+  margin: 25px 0;
+  padding: 1rem;
+  background: var(--todo-dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  width: 70px;
+  padding: 0.5rem;
+}
+
+.edit,
+.remove {
+  color: #fff;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.sort-name {
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+}
+.sort-date {
+  background: transparent;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+}
+.sort-name-active {
+  background: transparent;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+.sort-date-active {
+  background: transparent;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #fff;
+}
