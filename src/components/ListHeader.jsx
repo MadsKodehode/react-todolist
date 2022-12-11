@@ -6,7 +6,7 @@ function ListHeader({ inputState, todo, addTodo }) {
   return (
     <header>
       <div className="header-wrap">
-        <h1 className="headline">I NEED TODO:</h1>
+        <h1 className="headline">I NEED TO:</h1>
         <div className="add-wrap">
           <input
             type="text"
