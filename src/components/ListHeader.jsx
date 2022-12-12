@@ -14,6 +14,7 @@ function ListHeader({ inputState, todo, addTodo }) {
             className="input"
             value={input}
             onChange={(event) => setInput(event.target.value)}
+            autoFocus={true}
           ></input>
           <button className="add-btn" onClick={() => addTodo(todo)}>
             <IoIosAddCircle></IoIosAddCircle>
