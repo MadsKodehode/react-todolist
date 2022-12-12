@@ -1,5 +1,7 @@
 import { MdEdit, MdRemoveCircle } from "react-icons/md";
-import { useEffect, useState } from "react";
+import { FaCheckCircle } from "react-icons/fa";
+import { VscDiscard } from "react-icons/vsc";
+import { useState } from "react";
 function ListItem({ todoListState, removeTodo }) {
   const [todoList, setTodoList] = todoListState;
 
@@ -43,14 +45,15 @@ function ListItem({ todoListState, removeTodo }) {
             value={editInput}
             onChange={(event) => setEditInput(event.target.value)}
             autoFocus={true}
+            className="input-edit"
           ></input>
-          <button className="update" onClick={() => editTodo(todo.id)}>
-            Set
-          </button>
-          <button className="discard" onClick={discardEdit}>
-            X
-          </button>
+          <FaCheckCircle
+            className="update"
+            onClick={() => editTodo(todo.id)}
+          ></FaCheckCircle>
+          <VscDiscard className="discard" onClick={discardEdit}></VscDiscard>
         </div>
+
         <div className="btns">
           <MdEdit className="edit" onClick={() => setEdit(todo.id)}></MdEdit>
           <MdRemoveCircle
