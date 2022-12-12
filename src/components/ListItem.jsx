@@ -42,6 +42,7 @@ function ListItem({ todoListState, removeTodo }) {
             type="text"
             value={editInput}
             onChange={(event) => setEditInput(event.target.value)}
+            autoFocus={true}
           ></input>
           <button className="update" onClick={() => editTodo(todo.id)}>
             Set
